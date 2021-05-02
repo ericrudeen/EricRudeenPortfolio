@@ -5,86 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Rudeen</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 
 <body>
-
     <!-- Header with navbar -->
-    <header class="header">
-        <h1 class="h1-container">Eric Rudeen</h1>
-        <nav>
-            <ul class="header-navigation">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" >
+        <a class="navbar-brand" href="#">Eric Rudeen</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item align-middle"><a class="nav-link" href="#About Me">About Me</a></li>
+                <li class="nav-item align-middle"><a class="nav-link" href="#work">Work</a></li>
+                <li class="nav-item align-middle"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item align-middle"><a class="nav-link" href="#contact">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero section -->
-    <section class="hero-section">
-        <h2>Front End Web Developer</h2>
+    <section class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6" id="About-Me">
+                <h1>Eric Rudeen</h1>
+                <h2>Project Manager/Web Developer</h2>
+                <p>
+                    My name is Eric, and I have been working in the marketing and web development industry for 4 years! I have experience as a project manager and have overseen more than 25 projects successfully over the duration of a year and a half.  
+                </p>
+                <p>
+                    My role as a project manager sparked my love for web development and the internet as a whole. Since completing my education, I am qualified and eager to step into a more technical role in web development, preferably as a front end web developer. My main goal for now is to grow and continue to learn as much as I can about this significant and dynamic industry.
+                </p>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/images/IMG_3428.jpg" class="d-block mx-lg-auto img-fluid">
+            </div>
+        </div>
     </section>
     
-    <!-- Main content -->
-    <main>
-        <!-- About Me section -->
-        <section class="content-section">
-            <div class="sidebar">
-                <h3 class="sidebar-content">About Me</h3>
+    <!-- Work section -->
+    <section class="container py-5" id="work">
+        <h2 class="pb-2 border-bottom">My Work</h3>
+        <div class="row g-5 py-5">
+            <div class="feature col-md-4">
+                <a href="https://ericrudeen.github.io/word-party/" target="_blank"><img src="assets/images/Screen Shot 2021-05-01 at 5.18.11 PM.png" class="d-block mx-lg-auto img-fluid pb-3"></a>
+                <h3>Word Party!</h3>
+                <p>For this project our team had to work together to develop a web application from scratch. We made an applicaiton called "Word Party". When the user submits a word into Word Party via the input field, Word Party returns information about the word from dictionary.com (notably definitions, pronunciation, and phonetics), and a GIF from Giphy that is associated with that word.</p>
+                <a href="https://ericrudeen.github.io/word-party/" target="_blank" class="icon-link">See it live!</a>
             </div>
-            <div class="flexible-content">
-                <p>
-                    My name is Eric, and I have been working in the marketing and web development industry for 4 years! I have experience as a project manager and have overseen more than 25 projects successfully over the duration of a year and a half.   
-                </p>
-                &nbsp;
-                <p>
-                    My role as a project manager sparked my love for web development and the internet as a whole. Since completing my education, I am qualified and eager to step into a more technical role in web development, preferably as a front end web developer. My main goal for now is to grow and continue to learn as much as I can about this significant and dynamic industry. 
-                </p>
+            <div class="feature col-md-4">
+                <a href="https://ericrudeen.github.io/word-party/" target="_blank"><img src="assets/images/Screen Shot 2021-05-01 at 5.23.37 PM.png" class="d-block mx-lg-auto img-fluid pb-3"></a>
+                <h3>The Password Generator</h3>
+                <p>For this project I used HTML, CSS, and JavaScript to develop an application that generates passwords for users based on their selected criteria.</p>
+                <a href="https://ericrudeen.github.io/password-generator/" target="_blank" class="icon-link">See it live!</a>
             </div>
-        </section>
+            <div class="feature col-md-4">
+                <a href="https://ericrudeen.github.io/word-party/" target="_blank"><img src="assets/images/Screen Shot 2021-05-01 at 5.28.35 PM.png" class="d-block mx-lg-auto img-fluid pb-3"></a>
+                <h3>Work Day Scheduler</h3>
+                <p>For this project, I developed an application using HTML, CSS, and Javascript that helps the user plan out there work day. The user can save events into certain hours of the day and as time in the day progresses, the application will indicate to the user hours that have passed by changing the colors on the screen.</p>
+                <a href="https://ericrudeen.github.io/Day-Planner/" target="_blank" class="icon-link">See it live!</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Work section -->
-        <section class="content-section">
-            <div class="sidebar">
-                <h3 class="sidebar-content">Work</h3>
-            </div>
-            <div class="flexible-content">
-                <div class="newest-project-box">
-                    <div class="project-box-text">
-                        <h4>Code Refractor</h4>
-                        <p>UCSD Extension</p>
-                    </div>
-                </div>
-                <div class="newest-project-box">
-                    <div class="project-box-text">
-                        <h4>Code Refractor</h4>
-                        <p>UCSD Extension</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Resume -->
+    <section class="container text-center mb-5 pb-5" id="resume">
+        <img class="w-75 border" src="assets/images/Eric Rudeen Resume.png">
+    </section>
 
-        <!-- Contact Me section -->
-        <section class="content-section">
-            <div class="sidebar">
-                <h3 class="sidebar-content">Contact Me</h3>
+    <!-- Contact Me section -->
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color:white">Contact Me</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="tel:8582042468">858.204.2468</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:ericrudeen@gmail.com">ericrudeen@gmail.com</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/ericrudeen">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/eric-rudeen/">LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/ericrudeen/">Instagram</a></li>
+                </ul>
             </div>
-            <div class="flexible-content">
-                <div class="wrap">
-                    <ul class="header-navigation">
-                        <li><a href="tel:8582042468">858.204.2468</a></li>
-                        <li><a href="mailto:ericrudeen@gmail.com">ericrudeen@gmail.com</a></li>
-                        <li><a href="https://github.com/ericrudeen">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/eric-rudeen/">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/ericrudeen/">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
